@@ -4,10 +4,10 @@ def campeonato():
     j = int(input('2 - para jogar um campeonato '))
 
     if j == 1:
-        print('\nVoce escolheu uma partida!')
+        print('\nVocê escolheu uma partida!')
         partida()
     else:
-        print('\nVoce escolheu um campeonato!')
+        print('\nVocê escolheu um campeonato!')
         for i in range(1, 4):
             print('\n**** Rodada', i, '****')
             partida()
@@ -23,7 +23,7 @@ def partida():
         partida()
 
     if n % (m+1) == 0:
-        print('\nVoce começa!')
+        print('\nVocê começa!')
         vezDe = '\nVocê'
     else:
         print('\nComputador começa!')
