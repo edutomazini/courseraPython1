@@ -102,8 +102,7 @@ def calc_sac(texto):
     listaSentencas = separa_sentencas(texto)
     for sentenca in listaSentencas:
         listafrases = separa_frases(sentenca)
-        for frases in listafrases:
-            count = count + 1
+        count = count + len(listafrases)
     return count / len(listaSentencas)
 
 def calc_pal(texto):
