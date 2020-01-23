@@ -108,10 +108,14 @@ def calc_sac(texto):
 
 def calc_pal(texto):
     count = 0
-    listafrases = separa_frases(texto)
+    listafrases1 = separa_frases(texto)
+    print(listafrases1)
+    listafrases = ['Muito além', ' nos confins inexplorados da região mais brega da Borda Ocidental desta Galáxia', ' há um pequeno sol amarelo e esquecido', ' Girando em torno deste sol', ' a uma distancia de cerca de 148 milhões de quilômetros', ' há um planetinha verde-azulado absolutamente insignificante', ' cujas formas de vida', ' descendentes de primatas', ' são tão extraordinariamente primitivas que ainda acham que relógios digitais são uma grande ideia'] 
+#[5.571428571428571, 0.8253968253968254, 0.6984126984126984, 210.0, 4.5, 50.75]
+    #print(listafrases)
     for frases in listafrases:
             count = count + len(frases)
-    return count / len(listafrases)
+    return (count) / len(listafrases)
 
 def calcula_assinatura(texto):
     #wal = float(input("Entre o tamanho medio de palavra:"))
